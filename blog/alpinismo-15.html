@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>Cambio climatico en el alpinismo</h2>
+                    <p>Desafortunadamente el alpinismo y los ecosistemas de las montañas están siendo comprometidos por las causas del cambio climático provocando derretimiento de glaciales y un aumento de avalanchas.</p>
+                    <p>Los cambios en las condiciones climáticas han llevado a una mayor variabilidad meteorológica en las montañas, con tormentas más intensas y frecuentes. Esto impacta directamente en la planificación de expediciones, ya que la ventana para condiciones óptimas se vuelve más estrecha y menos predecible, aumentando el riesgo de exposición a condiciones extremas. Además, el ascenso a ciertas cumbres se ha vuelto más peligroso debido al retroceso de nieves permanentes y a la exposición de rocas que antes estaban cubiertas. Esto altera las rutas tradicionales y obliga a los alpinistas a adaptarse a nuevos desafíos y peligros potenciales.</p>
+                    <p>El cambio climático también ha suscitado preocupaciones éticas en el alpinismo. Lugares antes remotos y poco accesibles se han vuelto más asequibles debido al retroceso del hielo, lo que lleva a un aumento en el número de personas que buscan conquistar estas cumbres. Esto plantea dilemas sobre la preservación de la autenticidad y la fragilidad de estos entornos, así como sobre el impacto humano en estos ecosistemas ya vulnerables.</p>
+                    <p>Los alpinistas y las organizaciones dedicadas a este deporte están adaptando sus prácticas para minimizar el impacto ambiental y promover la conciencia sobre la importancia de la conservación. Se enfocan en técnicas de escalada responsables, en la gestión de residuos y en la promoción de prácticas sostenibles para preservar estos valiosos entornos y ayudar a la siguiente generacion de alpinistas que puedan apreciar de las magnificas vistas que ofrecen estos ecosistemas.</p>
+                    <p>La conciencia sobre el cuidado de la diversidad en las montañas ha ido cobrando mayor relevancia entre la comunidad de alpinistas. La diversidad en estos ecosistemas no solo se refiere a la flora y fauna únicas que habitan en estas altitudes, sino también a la riqueza cultural de las comunidades locales que dependen de estos entornos.</p>
+                    <p>La preservación de la biodiversidad en las montañas se ha convertido en una prioridad para muchos, reconociendo que las acciones humanas pueden causar daños irreparables en estos frágiles hábitats.
+                        Una parte importante de esta conciencia se centra en minimizar la huella ambiental de las expediciones. Esto incluye la planificación cuidadosa de las rutas para evitar dañar áreas sensibles y la promoción de métodos de escalada que reduzcan el impacto en la roca y el suelo.
+                        Además del enfoque ambiental, los alpinistas están tomando conciencia de la importancia de respetar la diversidad cultural de las comunidades locales que viven en las zonas montañosas. Reconocen que estas comunidades tienen un profundo conocimiento de la montaña, su conservación y sus desafíos, y buscan establecer relaciones respetuosas y colaborativas.
+                        La educación juega un papel crucial en esta conciencia. Muchas organizaciones y grupos de alpinistas están promoviendo la sensibilización sobre la diversidad de montaña, ofreciendo programas de capacitación sobre prácticas éticas, conservación ambiental y respeto por las culturas locales. Esto ayuda a los alpinistas a comprender mejor el valor de estos ecosistemas y la importancia de preservar su diversidad.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-15.jpg" alt="imagen del cambio climatico">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>

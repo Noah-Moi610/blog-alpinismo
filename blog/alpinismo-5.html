@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>Las 10 de México</h2>
+                    <p>De ser una conquista nacional se convirtieron en un reto en el deporte del alpinismo mexicano llamando el reto las 10 de México. Las montañas más altas se encuentran principalmente en la Sierra Madre Occidental y la Sierra Madre Oriental.</p>
+                    <ol>
+                        <li><strong>Pico de Orizaba</strong>: También conocido como Citlaltépetl, es la montaña más alta de México y el tercer pico más alto de América del Norte, con una altitud de 5 636 msnm. Se ubica en la frontera de los estados de Puebla y Veracruz.</li>
+                        <li><strong>Popocatépetl</strong>: Con una altura de 5,426 msnm, es el segundo pico más alto del país y uno de los volcanes más activos de México. Se localiza en los límites de Morelos, Puebla y México.</li>
+                        <li><strong>Iztaccíhuatl</strong>: Con una altura de 5,230 msnm, se encuentra al lado del Popocatépetl. Esta montaña es conocida como la &quot;Mujer Blanca&quot; por su forma que se asemeja a una figura recostada y cubierta de una capa de nieve. Considerada una de las mas difíciles debido a su ruta y el constante cambio del clima.</li>
+                        <li><strong>Nevado de Toluca (Xinantecatl)</strong>: A unos 4,690 msnm, este volcán inactivo se encuentra en el Estado de México. Su cráter alberga dos lagunas llamadas laguna del sol y la luna.</li>
+                        <li><strong>Teyolt</strong>: Tiene una elevación de  4,660 msnm, es la parte mas antigua del Iztaccíhuatl, lo que da a nombrarla parte de las 10.</li>
+                        <li><strong>Sierra Negra</strong>: Con 4,580 msnm, es un volcán ubicado en Puebla, formado cerca del Pico de Orizaba y teniendo en la cumbre las instalaciones donde albergan un observatorio solar.</li>
+                        <li><strong>La Malinche</strong>: Con una altura de 4 460 msnm ubicado entre Tlaxcala y Puebla, es un Volcan activo que cuyo característica que tiene es su enorme cráter, generado a un costado del volcán desde su ultima explosión.</li>
+                        <li><strong>Cofre de perote</strong>: Es un volcán extinto ubicado en el estado de Veracruz con una altura de 4 282 msnm. Su nombre se deriva a su peculiar forma que se asemeja a un cofre, es una de los volcanes mas populares entre los senderistas y montañistas.</li>
+                        <li><strong>Nevado de Colima</strong>: Es un volcán activo que está situado entre el estado de Jalisco y Colima con una altura de 4 260 msnm, es uno de los picos mas altos de México y desafiante para los excursionistas y montañistas.</li>
+                        <li><strong>Monte Tlaloc</strong>: Es una montaña que está ubicada en el estado de México, con una altura de 4 120 msnm, es conocida por su importancia cultural y arqueológica debido a sus ruinas en la cima de ella.</li>
+                    </ol>
+                    <p>Estas majestuosas montañas no solo ofrecen vistas impresionantes, sino que también tienen un valor significativo cultural, histórico y geográfico para México.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-5.jpg" alt="imagen de las 10 montañas más altas de México">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>

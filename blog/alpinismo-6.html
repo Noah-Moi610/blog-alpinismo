@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>Las 7 Cumbres</h2>
+                    <p>A diferencia de las 14 ochomiles este reto implica ascender las 7 cumbres mas altas de cada continente, Con el triunfo de Richard Bass en 1985 siendo el primero en completar el reto, aunque la lista exacta de cumbres ha sido tema de debates entre los montañistas.</p>
+                    <ol>
+                        <li><strong>El monte Everest (Asía)</strong>: Con 8 848 msnm representa su desafio por la falta de oxigeno,las habilidades técnicas y resistencias extrema debido a su altitud.</li>
+                        <li><strong>Cerro Aconcagua (América del sur)</strong>: Con sus 6 962 msnm, ubicado entre Chile y Argentina, es el mas alto de toda America.</li>
+                        <li><strong>Monte Denali (Alaska)</strong>: Con 6 190 msnm es parte de la cordillera de Alaska, Consiste en una gran elevación de roca granítica</li>
+                        <li><strong>Kilimanjaro (Africa)</strong>: Con 5 885 msnm siendo un volcán inactivo y formando muy importante en la cultura africana.</li>
+                        <li><strong>Monte Elbrus (Europa)</strong>: Con 5 642 msnm siendo el pico mas alto del continente Europeo, ubicado en la cordillera caucásica.</li>
+                        <li><strong>Monte Vison (Antártida)</strong>: Ubicado a unos 1 200 km del polo sur, es la montaña mas alta de la Antártida, con 4 892 msnm, las temperaturas medias esta por debajo de los -50 grados.</li>
+                        <li><strong>Monte Kosciuszko (Oceania)</strong>: Cima de 2.228 m de altura, en los Alpes Australianos de la Gran Cordillera Divisoria, al sureste de Australia, entre Sydney y Melbourne. Forma parte de la sierra de Muniong, situada entre los estados de Nueva Gales del Sur y Victoria; y es el punto más altos del país. Como la mayoría de los picos más altos de Australia, su ascensión no presenta grandes dificultades.</li>
+                    </ol>
+                    <p>El reto de las siete Cumbres ha evolucionado desde su inicio, y su popularidad ha llevado a variaciones y adaptaciones, como intentos de ascender rápidamente todas las cumbres. Para muchos alpinistas, el reto de las siete cumbres representa una culminación de años de dedicación, esfuerzo y pasión por el montañismo. Cada ascenso es mas que una conquista física; es un viaje que pone a prueba los limites humanos, la resiliencia y dejando una impresión duradera en la vida de quienes se aventuran a emprenderla.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-6.jpg" alt="imagen de las 7 Cumbres">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>

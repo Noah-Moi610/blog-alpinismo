@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>Seguridad y riesgos</h2>
+                    <p>Explorar la montaña es una aventura emocionante, pero también conlleva riesgos significativos. La falta de experiencia o habilidades puede resultar en errores de juicio, el uso incorrecto de técnicas o materiales, y desencadenar incidentes peligrosos. Cada individuo comprende la importancia de depender únicamente de sus propios recursos en este entorno desafiante.</p>
+                    <p>Los incidentes en la montaña pueden ser provocados por caídas sobre rocas o hielo, desprendimientos de objetos, entre otros. A menudo, estos incidentes son causados por errores humanos, representando hasta un 85% de los casos, mientras que un 15% son debido a condiciones externas que no se puede controlar.</p>
+                    <p>La evaluación del riesgo en esta actividad se basa en una fórmula que considera <strong>la gravedad potencial de un accidente, la probabilidad de que ocurra y el tiempo de exposición al riesgo.</strong> Al aumentar cualquiera de estas variables, se incrementa el riesgo general.</p>
+                    <p>Para mitigar estos riesgos, los alpinistas deben adoptar un enfoque completo que abarque desde la preparación y planificación hasta el equipamiento adecuado y la toma de decisiones informadas durante toda la expedición. Algunas estrategias clave incluyen:</p>
+                    <p>Preparación física y técnica: Entrenamiento en habilidades de escalada, manejo de equipo y primeros auxilios, esencial para enfrentar los desafíos del terreno.</p>
+                    <p>Conocimiento y formación:</p>
+                    <ul>
+                        <li>
+                            <p>Obtener información detallada sobre la ruta, condiciones climáticas y peligros potenciales, a través de educación continua y cursos especializados.</p>
+                        </li>
+                        <li>
+                            <p>Planificación meticulosa: Evaluar riesgos, establecer planes de contingencia y estar preparado para cambios inesperados en la ruta o clima.</p>
+                        </li>
+                        <li>
+                            <p>Equipamiento adecuado: Utilizar equipos de alta calidad y en buen estado para protegerse de condiciones climáticas extremas.</p>
+                        </li>
+                        <li>
+                            <p>Aclimatación gradual: Ascender a altitudes elevadas de forma progresiva para permitir que el cuerpo se adapte y reducir riesgos relacionados con la altitud.</p>
+                        </li>
+                    </ul>
+                    <p>Además, mantener una comunicación constante, evaluar riesgos en curso, respetar los límites personales y tener capacidad para decisiones informadas son aspectos vitales para la seguridad.</p>
+                    <p>Al combinar una preparación rigurosa, planificación meticulosa y la capacidad de adaptación, los alpinistas pueden reducir de manera significativa los riesgos asociados con esta emocionante pero desafiante actividad.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-11.jpg" alt="imagen de la historia del alpinismo">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>

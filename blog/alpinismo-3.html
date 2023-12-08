@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>La historia del alpinismo en México</h2>
+                    <p>En México existen testimonios sobre los orígenes del alpinismo en la época prehispánica con el ascenso al volcán Popocatépetl, aunque el alpinismo mexicano empezó sus primeras manifestaciones en el siglo XX con la iniciativa a la exploración, conquistas, expediciones científicas y aventuras. Los primeros pioneros mexicanos comenzaron a explorar las montañas, enfrentándose a terrenos difíciles y condiciones climáticas extremas.</p>
+                    <p>Durante 1950 y 1960, el alpinismo tuvo mas impacto y creció el interés del deporte, se crearon clubes y asociaciones con el fin de crear nuevos tipos de desafíos más ambiciosos como la ascensión al Pico de Orizaba (citlatepetl), la montaña más alta de México con una altitud de 5 636 msnm, marcando un hito y el significado en la historia del alpinismo mexicano. Con ello se crearon parques nacionales y áreas protegidas para la preservación de entornos naturales y también a fomentar la pasión al alpinismo.<br>
+                        En las siguientes décadas mas personas iniciaron a practicar el alpinismo y continuaron explorando rutas nuevas y desafíos en diversas montañas del país junto con esto se fundó la primera organización del alpinismo conocida Grupo Alpino Mexicano (CAM) en 1980 tomando un papel importante con el objetivo de promocionar con mas fuerza el alpinismo y capacitar a las personas para que puedan practicar con mas seguridad este deporte.</p>
+                        <p>Los primeros mexicanos en el alpinismo
+                            No olvidemos mencionar a los primeros mexicanos que lograron grandes triunfos y llevaron la bandera de nuestro país a lo mas alto.</p>
+                            <p><strong>Carlos Carsolio:</strong> Nacido en México en 1962, Carsolio es considerado uno de los alpinistas más destacados de América Latina. En 1985, se convirtió en el primer mexicano en alcanzar la cumbre del Monte Everest, la montaña más alta del mundo. A lo largo de su carrera, Carsolio también logró ascender a las cumbres de otros ochomiles, ganándose reconocimiento internacional por sus habilidades y valentía en la alta montaña.</p>
+                            <p><strong>Joaquín &quot;Quino&quot; de la Sierra:</strong> En 1981, Quino de la Sierra se convirtió en el primer mexicano en alcanzar la cumbre del K2, la segunda montaña más alta del mundo. Su logro en el K2, conocido por ser una de las montañas más desafiantes, contribuyó a la reputación internacional de los alpinistas mexicanos.</p>
+                            <p><strong>Arturo Berganza:</strong> Este alpinista mexicano ha participado en numerosas expediciones internacionales y ha alcanzado la cumbre de varias montañas notables, incluido el Monte Everest en 2016. Berganza ha representado a México en diversas competiciones y ha contribuido al reconocimiento del país en el ámbito del alpinismo a nivel mundial.</p>
+                            <p><strong>David Liano González:</strong> En 2012, David Liano se convirtió en el primer mexicano en completar el Desafío de los Siete Summits, que consiste en escalar la montaña más alta de cada uno de los siete continentes. Este logro lo llevó a las cumbres de montañas como el Monte McKinley en América del Norte y el Monte Elbrús en Europa.</p>
+                            <p>Estos alpinistas mexicanos no solo fueron los primeros en alcanzar cumbres emblemáticas, sino que también contribuyeron a la internacionalización y reconocimiento de México en el mundo del alpinismo. Sus hazañas han inspirado a generaciones posteriores de alpinistas en México a seguir explorando y desafiando las cumbres más altas del planeta.</p>
+                    </div>
+                </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-2.jpg" alt="imagen de la historia del alpinismo mexicano">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>

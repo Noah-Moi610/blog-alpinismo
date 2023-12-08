@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La historia del alpinismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/blog-alpinismo/src/img/mounticon.jpg">
+    <link rel="stylesheet" href="/blog-alpinismo/src/css/style.css">
+</head>
+<body>
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#" id="icon_init">
+                        <i class="fa-sharp fa-solid fa-mountain fa-beat fa-xl"></i>
+                    </a>
+                </div>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Historia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-1.html">Historia del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-2.html">Historia del alpinismo femenino</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-3.html">La historia del alpinismo en México </a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-4.html">El alpinismo en la actualidad</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desafios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-5.html">La de 10 México</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-6.html">Las 7 cumbres</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-7.html">Las 14 ochomiles</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Conocimientos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-9.html">Conocimientos para la practica del alpinismo</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-8.html">Escalada baja,media y alta montaña</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-10.html">Herramientas de un alpinista y sus usos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-11.html">Seguridad y riesgos</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-14.html">¿Quieres iniciar en el alpinismo?</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas...
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-12.html">El cuerpo humano y sus efectos en las alturas</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-13.html">Equipos de rescate</a></li>
+                                <li><a class="dropdown-item" href="/blog-alpinismo/blog/alpinismo-15.html">Cambio climatico en el alpinismo</a></li>
+                            </ul>
+                        </li>
+                    </button>
+                </ul>
+                <label for="Toggle" id="label-Toggle"><i class="icon"></i></label> 
+                <input type="checkbox" id="Toggle">
+                <form class="d-flex" role="search" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" autocomplete="off"/>
+                    <button class="btn btn-outline-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="Results"></div>
+                <script src="/main.js" async defer></script>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-1">
+                    <h2>La historia del alpinismo</h2>
+                    <p>El alpinismo es una de las disciplinas mas antiguas y va ligada a la historia del ser humano, existen evidencias donde el ser humano ha desafiado a la naturaleza y a escalado o cruzado las montañas. Ya sea por la característica de supervivencia del ser humano donde tenía la necesidad de trasladarse en busca de alimentos o refugio para poder soportar las temperaturas extremas.</p>
+                    <p>El primer encuentro documentado en la historia fue  en el siglo XV en 1492, donde un grupo militar obedecía ordenes del rey de Francia y su objetivo era la ascensión del Monte Aiguille (2087 msnm) aunque fuera un monte de baja altitud, representó un desafío en aquella época debido a la inaccesibilidad y fue una verdadera conquista para la época. Así fue como los humanos empezaron a tener esta motivación y superar desafíos al hacer esta diciplina.</p>
+                    <p>En el siglo XIX con la llegada del romanticismo el sentimiento por la montaña crece entorno a tres claves: la poesía, la geografía y la moral. Y con él, el nacimiento del pirineísmo francés como. L. Ramond de Carbonnieres. Un especialista botánico y geólogo que puso sus ojos en la cima del Monte Perdido que logró conquistarla en 1802. Tambien Humboldt en 1799 logró hacer la ascensión al Tiede y con ello abrió las puertas a lo que se le denomina “alta montaña”,  la pericia, perseguir rutas difíciles y con riesgo, el aislamiento y la libertad en la naturaleza.</p>
+                    <p>En el siglo XX el alpinismo se convierte en su época dorada, se empezó a popularizar y muchos más practicaban este deporte de alto riesgo, no obstante las personas empezaron a buscar nuevos desafíos y retos como: alpinismo sin guía, primero de cuerda, búsqueda de nuevas rutas y horizontes, justo aquí empezaron a nacer los auténticos exploradores como:</p>
+                    <ul>
+                        <li><strong>Mallory George</strong>, el padre del alpinismo moderno, valiente e innovador en búsqueda de nuevas rutas en los Himalayas.</li>
+                        <li><strong>Tita Piaz</strong>, A. Dibona y H.Dulfer marcaron un estilo al buscar rutas verticales y difíciles en los Alpes y Dolomitas y con ello se le denomina “escalda libre”.</li>
+                        <li><strong>Maurice Herzog</strong> el primero ochomilista, Annapurna en 1950.</li>
+                        <li><strong>Reinhold Messner</strong> conocido como el mejor alpinista de todos los tiempos rebasado los límites de lo posible y ser el primer alpinista en conquistar las 14 ochomiles <em>sin oxigeno</em>.</li>
+                    </ul>
+                    <p>Mencionar a todos los alpinistas me tomaría tiempo, sin embargo todo ellos tienen en cmún la superación personal y demostras que lo imposible es posible.</p>
+                    <hr>
+                    <h2><em>¿Sabías como es que se creó la cartografía en las montañas?</em></h2>
+                    <p>Un pequeño dato curios,en el siglo XVIII (época de la ilustración) debido a la época, la gente no tenía interés de practicar esta disciplina al menos que no fuera por necesidad, sin embargo empezaron a surgir  personas que  lograron hacer un cambio de pensamiento como Vicente de Heredia (el primer pirineísta español) realizó numerosas ascensiones con el objetivo de hacer mediciones geodésicas y mejoró la cartografía existente. Gracias a sus portaciones se comenzó a dar una nueva visión geológica y diferente a la descripción bíblica. Es a el que le agradecemos sus conocimientos y así las personas pueden tener una mejor orientación al escalar montañas.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contenido-3">
+                    <img src="/blog-alpinismo/src/img/alpinismo-1.jpg" alt="imagen de la historia del alpinismo">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <p>
+                    <small>Sitio hecho por <a href="https://github.com/Noah-Moi610" target="_blank">Noah-Moi610</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/blog-alpinismo/src/js/index.js"></script>
+</body>
+</html>
